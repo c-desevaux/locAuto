@@ -36,9 +36,8 @@
 
         public function __toString()
         {
-            $str = parent::__toString().", places max: ".$this->getNbPlace();
+            $str = parent::__toString().", places max: ".$this->getNbPlace()."<br>";
 
-            echo $str;
             return $str;
         }
         

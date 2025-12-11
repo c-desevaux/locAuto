@@ -35,9 +35,8 @@
         
         public function __toString()
         {
-            $str = parent::__toString().", autonomie: ".$this->getAutonomie();
+            $str = parent::__toString().", autonomie: ".$this->getAutonomie()."<br>";
 
-            echo $str;
             return $str;
         }
 

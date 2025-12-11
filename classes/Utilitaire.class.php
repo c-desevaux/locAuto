@@ -35,9 +35,8 @@
 
             public function __toString()
             {
-            $str = parent::__toString().", charge utile: ".$this->getCharge();
+            $str = parent::__toString().", charge utile: ".$this->getCharge()."<br>";
 
-            echo $str;
             return $str;
             }
     }

@@ -52,7 +52,10 @@
             return $str;
         }
 
-        abstract function planifierRevision();
+        public abstract function planifierRevision();
+
+        
+        
         
     }
 

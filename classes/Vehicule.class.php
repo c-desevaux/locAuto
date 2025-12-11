@@ -1,6 +1,6 @@
 <?php
 
-    class Vehicule {
+    abstract class Vehicule {
 
         private $brand;
         private $model;
@@ -33,12 +33,17 @@
         public function setBrand(string $brand): void{
             $this->brand = $brand;
         }
+
         public function setModel(string $model): void{
             $this->model = $model;
         }
+
         public function setId(string $id): void{
             $this->id =$id;
         }
+
+
+//FONCTIONS
 
         public function __toString()
         {
@@ -47,6 +52,7 @@
             return $str;
         }
 
+        abstract function planifierRevision();
         
     }
 

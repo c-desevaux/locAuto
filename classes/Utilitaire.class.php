@@ -22,7 +22,11 @@
 //SETTERS
 
             public function setCharge(int $charge): void{
-                $this->charge = $charge;
+
+                if($charge > 0){
+                    $this->charge = $charge;
+                }
+                
             }
 
             public function planifierRevision(){
@@ -30,12 +34,12 @@
             }
 
             public function __toString()
-        {
-            $str = "Vehicule de la marque: ".$this->getBrand().", modèle: ".$this->getModel().", immatriculaiton: ".$this->getId();
+            {
+            $str = parent::__toString().", charge utile: ".$this->getCharge();
 
             echo $str;
             return $str;
-        }
+            }
     }
 
 ?>

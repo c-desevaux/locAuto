@@ -23,7 +23,10 @@
 //SETTERS
 
         public function setAutonomie(int $autonomie): void{
-            $this->autonomie = $autonomie;
+            if($autonomie>0){
+                $this->autonomie = $autonomie;
+            }
+            
         }
 
         public function planifierRevision(){
@@ -32,7 +35,7 @@
         
         public function __toString()
         {
-            $str = parent::__toString()."autonomie: ".$this->getAutonomie();
+            $str = parent::__toString().", autonomie: ".$this->getAutonomie();
 
             echo $str;
             return $str;

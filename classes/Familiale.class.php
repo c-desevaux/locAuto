@@ -23,7 +23,11 @@
 //SETTERS
 
         public function setNbPlace(int $nbPlace): void{
-            $this->nbPlace = $nbPlace;
+
+            if($nbPlace){
+                $this->nbPlace = $nbPlace;
+            }
+            
         }
 
         public function planifierRevision(){

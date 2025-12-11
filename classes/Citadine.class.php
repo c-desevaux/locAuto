@@ -22,7 +22,7 @@
 
 //SETTERS
 
-        public function setAutonomie($autonomie): void{
+        public function setAutonomie(int $autonomie): void{
             $this->autonomie = $autonomie;
         }
 
@@ -30,7 +30,13 @@
             echo "";
         }
         
+        public function __toString()
+        {
+            $str = parent::__toString()."autonomie: ".$this->getAutonomie();
 
+            echo $str;
+            return $str;
+        }
 
 
     }

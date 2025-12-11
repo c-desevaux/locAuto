@@ -2,8 +2,13 @@
 
     require_once 'classes/Vehicule.class.php';
     require_once 'classes/VehiculeException.class.php';
+    require_once 'classes/Citadine.class.php';
+    require_once 'classes/Familiale.class.php';
+    require_once 'classes/Utilitaire.class.php';
 
-    $voiture = new Vehicule ("vroom", "vroomvroom", "B8430BG");
-    $voiture->__toString();
+   
+
+    $twingo = new Citadine ("Renault", "Twingo", "", 5);
+    $twingo->__toString();
 
 ?>

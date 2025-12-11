@@ -40,14 +40,14 @@
             $this->id =$id;
         }
 
-
         public function __toString()
         {
             $str = "Vehicule de la marque: ".$this->getBrand().", modèle: ".$this->getModel().", immatriculaiton: ".$this->getId();
 
-            echo $str;
             return $str;
         }
+
+        
     }
 
 ?>

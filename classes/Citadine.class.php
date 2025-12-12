@@ -32,10 +32,15 @@
         public function planifierRevision(){
             echo "";
         }
+
+        public function getAllInfo(): string {
+            
+            return $this->__toString();
+        }
         
         public function __toString()
         {
-            $str = parent::__toString().", autonomie: ".$this->getAutonomie()."<br>";
+            $str = parent::__toString().", autonomie: ".$this->getAutonomie()."km <br>";
 
             return $str;
         }

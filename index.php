@@ -6,6 +6,11 @@
     require_once 'classes/Familiale.class.php';
     require_once 'classes/Utilitaire.class.php';
     require_once 'classes/ParcVehicule.class.php';
+    require_once 'classes/Inventoriable.class.php';
+    require_once 'classes/Materiel.class.php';
+    require_once 'classes/Outil.class.php';
+    require_once 'classes/Depaneuse.class.php';
+    
 
    
 

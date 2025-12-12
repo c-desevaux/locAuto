@@ -34,9 +34,14 @@
             echo "";
         }
 
+        public function getAllInfo(): string {
+            
+            return $this->__toString();
+        }
+
         public function __toString()
         {
-            $str = parent::__toString().", places max: ".$this->getNbPlace()."<br>";
+            $str = parent::__toString().", places max: ".$this->getNbPlace()." places<br>";
 
             return $str;
         }

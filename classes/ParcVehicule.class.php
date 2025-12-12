@@ -8,13 +8,13 @@
 
         private static $parc;
 
-        public static function save(Vehicule $vehicule){
-            self::$parc[] = $vehicule;
+        public static function save(Inventoriable $inventoriable){
+            self::$parc[] = $inventoriable;
         }
 
         public static function getParc(){
-            foreach (self::$parc as $vehicule){
-                echo get_class($vehicule).":".$vehicule->__toString();
+            foreach (self::$parc as $inventoriable){
+                echo get_class($inventoriable).":".$inventoriable->getAllInfo();
             }
         }
 

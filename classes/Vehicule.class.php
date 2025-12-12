@@ -1,6 +1,7 @@
 <?php
+    require_once 'Inventoriable.class.php';
 
-    abstract class Vehicule {
+    abstract class Vehicule extends Inventoriable {
 
         private $brand;
         private $model;
@@ -16,15 +17,15 @@
 
 //GETTERS
 
-        public function getBrand(){
+        public function getBrand(): string{
             return $this->brand;
         }
 
-        public function getModel(){
+        public function getModel(): string{
             return $this->model;
         }
 
-        public function getId(){
+        public function getId(): string{
             return $this->id;
         }
 
@@ -44,6 +45,10 @@
 
 
 //FONCTIONS
+
+        
+        
+            
 
         public function __toString()
         {

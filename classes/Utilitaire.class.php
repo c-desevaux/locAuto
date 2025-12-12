@@ -28,14 +28,18 @@
                 }
                 
             }
-
+//FUNCTIONS
             public function planifierRevision(){
                 echo "";
+            }
+            public function getAllInfo(): string {
+
+            return $this->__toString();
             }
 
             public function __toString()
             {
-            $str = parent::__toString().", charge utile: ".$this->getCharge()."<br>";
+            $str = parent::__toString().", charge utile: ".$this->getCharge()."kg <br>";
 
             return $str;
             }

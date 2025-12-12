@@ -18,6 +18,18 @@
             }
         }
 
+        public static function searchParcById(string $id): ?Inventoriable {
+            foreach (self::$parc as $inventoriable){
+                if($inventoriable->getId() === $id){
+                    echo $inventoriable->getAllInfo();
+                    return $inventoriable;
+                }
+            }
+            echo "Nous n'avons pas trouvé d'élément avec l'id ".$id."<br>";
+            return null;
+
+        }
+
         
 
     }

@@ -2,15 +2,11 @@
 
     require_once 'Vehicule.class.php';
 
-    abstract class Inventoriable {
+    interface Inventoriable {
         
 
-
-
-
-
-        public abstract function getAllInfo(): string;
-        public abstract function getId(): string;
+        public function getAllInfo(): string;
+        public function getId(): string;
     }
 
 

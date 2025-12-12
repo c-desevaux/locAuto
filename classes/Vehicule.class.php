@@ -1,7 +1,7 @@
 <?php
     require_once 'Inventoriable.class.php';
 
-    abstract class Vehicule extends Inventoriable {
+    abstract class Vehicule implements Inventoriable {
 
         private $brand;
         private $model;
@@ -46,9 +46,6 @@
 
 //FONCTIONS
 
-        
-        
-            
 
         public function __toString()
         {

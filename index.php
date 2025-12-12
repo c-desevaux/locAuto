@@ -10,7 +10,7 @@
     require_once 'classes/Materiel.class.php';
     require_once 'classes/Outil.class.php';
     require_once 'classes/Depaneuse.class.php';
-    
+
 
    
 
@@ -30,7 +30,14 @@
     $parc->save($voiture2);
     $parc->save($voiture3);
 
+    $depaneuse1 = new Depaneuse("DPT001");
+
+    $parc->save($depaneuse1);
+
     $parc->getParc();
 
-    print_r($parc);
+    $parc->searchParcById("RF864PL");
+    $parc->searchParcById("DPT002");
+
+   
 ?>
